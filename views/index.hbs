@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+     *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{  
+    font-family: Calibri, Helvetica, sans-serif;  
+    height: 100vh;
+  }  
+  
+.container {  
+    padding: 50px;  
+  background-color: rgb(42, 163, 224);  
+}  
+
+
+input{  
+    width: 100%;
+    font-size: 1rem;  
+    padding: 15px;  
+    margin: 5px 0 22px 0;  
+    display: inline-block;  
+    border: none;  
+    background: #f1f1f1;  
+    font-weight: bold;
+  }  
+label{
+    font-size: 1.4rem;
+}
+   
+ div {  
+    padding: 10px 0;  
+ }  
+ 
+hr {  
+    border: 1px solid #f1f1f1;  
+    margin-bottom: 25px;  
+  }  
+  
+  .btn{
+    width: 10%;
+    margin-left: 45%;
+    border-radius: 10px;
+  }
+.btn:hover {  
+    cursor: pointer; 
+    background-color: rgb(21, 48, 166);
+  }  
+    </style>
+</head>
+<body>
+  <div class="container" >
+    <center><h1 >Registration Form</h1></center>
+    <form  action="/Submit-form" method="post">
+    
+      <label for="text">Name</label>  
+      <input type="text" name="name" placeholder="Name" required /><br>
+
+      <label for="email">E-mail</label>  
+      <input type="email" name="email" placeholder="E-mail" required /><br>
+
+      <label for="Phone">Phone No.</label>  
+      <input type="number" name="phone" placeholder="Phone number" required /><br>
+    
+      <label for="password">Password</label>  
+      <input type="password" name="password" placeholder="Password" required /><br>
+    
+      <input type="submit" value="Submit" class="btn" name="Submit">
+    </form>
+    </div>
+</body>
+</html>
